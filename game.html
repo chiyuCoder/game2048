@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+    <title>zofb-2048</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/game.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+<!--[if lt IE 8]>
+            <p>使用IE的话，请您手动调节视图大小</p>
+        <script type = "text/javascript">
+            alert("使用IE的话，请您手动调节视图大小");
+        </script>
+<![endif]-->
+    <div id ="ssr" class="gamediv">
+        <ul id="four2">
+            <li class="numEq2">2</li>
+            <li></li>
+            <li class="numEq512">512</li>
+            <li class="numEq16">16</li>
+            <li class="numEq32">32</li>
+            <li class="numEq64">64</li>
+            <li class="numEq128">128</li>
+            <li></li>
+            <li></li>
+            <li class="numEq1024">1024</li>
+            <li class="numEq2048">2048</li>
+            <li class="numEq256">256</li>
+            <li class="numEq8">8</li>
+            <li class="numEq64">64</li>
+            <li></li>
+            <li  class="numEq4">4</li>
+        </ul>
+        <div id="start">
+            <p>Start</p>
+        </div>
+        <div id = "menu">
+            <ul class="keyboard">
+                <li id = "keyup">up</li>
+                <li id = "keyrt">right</li>
+                <li id="keydw">down</li>
+                <li id = "keylt">left</li>
+                <li id = "keyhd">hide</li>
+            </ul>
+        </div>
+    </div>
+    <div class="st">
+        <p>score : <span id = "sc">0000</span> </p>
+    </div>
+    <script src="js/game.js" type="text/javascript"></script>
+    <script src="js/mouse.js" type="text/javascript"></script>
+    <script src="js/touch.js" type="text/javascript"></script>
+</body>
+</html>

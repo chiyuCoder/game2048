@@ -1,0 +1,41 @@
+#ssr{position: relative;margin: 20px auto;}
+#ssr ul{margin:0;padding: 0;list-style: none;}
+#four2{background: cyan;}
+#four2:after{content: "";display: block;visibility: hidden;clear: both;}
+#four2 li{font-size: 4em;text-align: center;background: darkcyan;float:left;}
+#four2 li.numEq2{background: wheat;color:black;}
+#four2 li.numEq4{background: yellow;color:black;}
+#four2 li.numEq8{background-color: lightgoldenrodyellow;color:black;}
+#four2 li.numEq16{background-color: bisque;color: black;}
+#four2 li.numEq32{background-color: antiquewhite;color:black;}
+#four2 li.numEq64{background-color: blanchedalmond;color:black;}
+#four2 li.numEq128{background-color: burlywood;color:black;}
+#four2 li.numEq256{background-color: chocolate;color:silver;}
+#four2 li.numEq512{background-color: darkgoldenrod;color:silver;}
+#four2 li.numEq1024{background-color:darkkhaki;color:seashell;}
+#four2 li.numEq2048{background-color: darksalmon;color:seashell;}
+.st{width:100%;min-width: 300px;margin:0 auto;text-align: center;}
+.st #sc{color:orangered;font-size: 1.2em;letter-spacing: 5px;}
+#start{position: absolute;left: 0;text-align: center;}
+#start p{width:240px;text-align: center;line-height: 60px;background-color: aqua;cursor: pointer;font-size:30px; border:1px solid seashell;margin:0 auto;}
+
+#menu{position: absolute;top:0;left:0;width:200px;height:200px;background-color: cornflowerblue;}
+#menu li{position: absolute;cursor: pointer;width:80px;height:40px;top:80px;left:0px;border: 1px solid silver;text-align: center;line-height: 40px;font-size: 2em;font-weight: bold;}
+#menu li:hover{background-color: silver;color:darkorange;transform: scale(1.3,1.2);transition: 1s transform ease;}
+#menu li#keyup{top:0px;left:80px;transform: rotate(90deg);transform-origin: 25%;}
+#menu li#keyup:hover{transform: matrix(0,1,-1,0,0,0); transition: 1s transform ease;}
+#menu li#keydw{top:120px;left:80px;transform: rotate(90deg);transform-origin: 25%;}
+#menu li#keyrt{top:80px;left:120px;}
+#menu li#keyhd{width:38px;height:38px;border:1px solid silver;top:80px;left:80px;font-size: 0.5em;text-align: center;}
+@media screen and (min-width:720px) {
+    #ssr{width:710px;height:710px;}
+    #four2{width:700px;height:700px;}
+    #four2 li{width:160px;height:160px;margin:7px;line-height: 160px;}
+    #start{top:320px;width:700px;}
+}
+@media screen and (max-width:720px) {
+    #ssr{width:310px;height:310px;}
+    #four2{width:300px;height:300px;}
+    #four2 li{width: 60px;height:60px;margin:7px;line-height: 60px;font-size: 14px;}
+    #start{top:120px;width:300px;}
+}
